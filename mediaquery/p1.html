@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            background-color: slateblue;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .card {
+            max-width: 100%;
+            background-color: gold;
+            padding: 20px;
+            color: #222;
+            height: 300px;
+            margin: 10px;
+        }
+
+        /* 
+        mobile input - 576px
+        tabs 1024px - input - 576px
+        laptop/desktop 1440px - input - 1024px
+        4k screens input - 1440px
+         */
+
+         /* screen => a screen value used here, which make sense since many of the media types. we're trying to match are devices with screens attached to them */
+
+         @media screen and (max-width:998px) {
+            .container {
+                background-color: #ccc;
+                display: flex;
+                flex-direction: column;
+            }
+            .card {
+                background-color: deeppink;
+                color: #fff;
+                height: 100%;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>header-1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque harum at voluptates perspiciatis quidem porro id ut laborum maxime asperiores. Incidunt odio odit modi? Nisi laudantium et totam, iste, quidem at eaque cumque cupiditate libero sed deleniti dolore suscipit mollitia? Explicabo ut, quae non eius laboriosam omnis sed voluptate ipsum.</p>
+        </div>
+
+        <div class="card">
+            <h3>header-1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque harum at voluptates perspiciatis quidem porro id ut laborum maxime asperiores. Incidunt odio odit modi? Nisi laudantium et totam, iste, quidem at eaque cumque cupiditate libero sed deleniti dolore suscipit mollitia? Explicabo ut, quae non eius laboriosam omnis sed voluptate ipsum.</p>
+        </div>
+
+        <div class="card">
+            <h3>header-1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque harum at voluptates perspiciatis quidem porro id ut laborum maxime asperiores. Incidunt odio odit modi? Nisi laudantium et totam, iste, quidem at eaque cumque cupiditate libero sed deleniti dolore suscipit mollitia? Explicabo ut, quae non eius laboriosam omnis sed voluptate ipsum.</p>
+        </div>
+
+        <div class="card">
+            <h3>header-1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque harum at voluptates perspiciatis quidem porro id ut laborum maxime asperiores. Incidunt odio odit modi? Nisi laudantium et totam, iste, quidem at eaque cumque cupiditate libero sed deleniti dolore suscipit mollitia? Explicabo ut, quae non eius laboriosam omnis sed voluptate ipsum.</p>
+        </div>
+    </div>
+</body>
+</html>

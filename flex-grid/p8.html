@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #eee;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background-color: #fff;
+            height: 100%;
+            padding: 30px;
+        }
+
+        .container form {
+            display: grid;
+            grid-gap: 20px;
+        }
+
+        .container form > div {
+            display: grid;
+            width: 100%;
+            grid-template-columns: [first] auto [second] 1fr;
+            grid-gap: 20px;
+        }
+
+        .container form > div > label {
+            grid-column: first;
+            grid-row: auto;
+        }
+
+        .container form > div > input {
+            grid-column: second;
+            grid-row: auto;
+            padding: 10px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form autocomplete="off">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div>
+                <label for="mobile">Mobile</label>
+                <input type="number" name="mobile" id="mobile" required>
+            </div>
+          
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

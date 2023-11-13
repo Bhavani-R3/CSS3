@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+            grid-gap: 4px;
+        }
+
+        .card {
+            box-shadow: 3px 3px 22px rgba(0, 0, 0, 0.2);
+            padding-bottom: 20px;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: 200px;
+        }
+
+        .card .txt {
+            padding: 12px;
+        }
+
+        .card p {
+            text-align: justify;
+            word-break: break-all;
+            text-indent: 40px;
+        }
+
+        .card a {
+            padding: 12px 14px;
+            background-color: crimson;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="gallery">
+        <div class="card">
+            <img src="./images/img1.jpg" alt="card-1">
+            <div class="txt">
+                <h2>Product-1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, eius facilis. Neque, quibusdam dignissimos! Dolor quisquam rem a, earum possimus, exercitationem perspiciatis in quam, dicta sint deleniti ratione corporis sit?</p>
+                <a href="#" >Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/img2.jpg" alt="card-2">
+            <div class="txt">
+                <h2>Product-2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, eius facilis. Neque, quibusdam dignissimos! Dolor quisquam rem a, earum possimus, exercitationem perspiciatis in quam, dicta sint deleniti ratione corporis sit?</p>
+                <a href="#" >Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/img3.jpg" alt="card-3">
+            <div class="txt">
+                <h2>Product-3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, eius facilis. Neque, quibusdam dignissimos! Dolor quisquam rem a, earum possimus, exercitationem perspiciatis in quam, dicta sint deleniti ratione corporis sit?</p>
+                <a href="#" >Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/img4.jpg" alt="card-4">
+            <div class="txt">
+                <h2>Product-4</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, eius facilis. Neque, quibusdam dignissimos! Dolor quisquam rem a, earum possimus, exercitationem perspiciatis in quam, dicta sint deleniti ratione corporis sit?</p>
+                <a href="#" >Add to Cart</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
