@@ -11,7 +11,7 @@ body {
     background-color: #222;
     min-height: 100vh;
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -19,7 +19,7 @@ body {
     position: relative;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     grid-template-rows: minmax(300px,auto);
     margin: 40px;
     grid-auto-flow: dense;
@@ -58,13 +58,8 @@ body {
     grid-row: span 2;
 }
 
-.container .box:nth-child(3) {
-    grid-column: span 1;
-    grid-row: span 3;
-}
-
 .container .box:nth-child(4) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 3;
 }
 
@@ -72,11 +67,6 @@ body {
     grid-column: span 3;
     grid-row: span 2;
 }
-
-/* .container .box:nth-child(6) {
-    grid-column: span 3;
-    grid-row: span 2;
-} */
 
 @media screen and (max-width: 991px) {
     .container {

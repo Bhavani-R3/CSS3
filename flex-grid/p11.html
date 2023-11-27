@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             display: grid;
-            grid-template-areas: "topH topH sideNav" "ads mainBody sideNav" "ads btmF sideNav";
+            grid-template-areas: "topH topH topH" "ads mainBody sideNav" "btmF btmF sideNav";
             grid-template-rows: 80px 1fr 80px;
-            grid-template-columns: 15% 1fr 10%;
+            grid-template-columns: 15% 1fr 15%;
             grid-gap: 10px;
-            height: 100vh;
+            height: 100vh; 
         }
 
         header,footer,div,aside,article {
             background-color: gold;
+            padding: 10px;
         }
 
         #topH { grid-area: topH; }
         #mainBody { grid-area: mainBody; }
-        #sideNav { grid-area: side-Nav; }
+        #sideNav { grid-area: sideNav; }
         #ads { grid-area: ads; }
         #bottomFoot { grid-area: btmF; }
     </style>
